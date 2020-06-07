@@ -12,14 +12,7 @@ class App extends Component{
   state={ loggedIn: null}
   UNSAFE_componentWillMount(){
       firebase.initializeApp({
-        apiKey: "AIzaSyB_iBy9ShC-EZbQO5dbTwsWsio8KtE_ZCs",
-        authDomain: "auth-33446.firebaseapp.com",
-        databaseURL: "https://auth-33446.firebaseio.com",
-        projectId: "auth-33446",
-        storageBucket: "auth-33446.appspot.com",
-        messagingSenderId: "299580994955",
-        appId: "1:299580994955:web:2de6add2162058c8d3ab8e",
-        measurementId: "G-TEW4G363W9"
+          //your firebase authentication keys
       })
 
       firebase.auth().onAuthStateChanged((user)=>{
